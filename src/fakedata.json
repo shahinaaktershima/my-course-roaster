@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/q79STQJ/Rectangle-2.png",
+      "courseName": "Introduction to Python Programming",
+      "credit": 3,
+      "price": 49.99,
+      "details": "Learn the fundamentals of Python programming and start building your own applications."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/mXPKrt6/Rectangle-2-1.png",
+      "courseName": "JavaScript Web Development",
+      "credit": 4,
+      "price": 79.99,
+      "details": "Master JavaScript and become a front-end web developer by building interactive websites."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/F52HJYN/Rectangle-2-2.png",
+      "courseName": "Data Science with R",
+      "credit": 3,
+      "price": 59.99,
+      "details": "Explore data analysis and visualization using R for a career in data science."
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/x8LmSxt/Rectangle-2-3.png",
+      "courseName": "Java Application Development",
+      "credit": 4,
+      "price": 69.99,
+      "details": "Build Java applications and become a versatile software developer."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/f15bPbv/Rectangle-2-4.png",
+      "courseName": "C# Game Development",
+      "credit": 4,
+      "price": 89.99,
+      "details": "Create 2D and 3D games using C# and Unity game engine."
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/pJcqMXd/Rectangle-2-5.png",
+      "courseName": "Full Stack Web Development",
+      "credit": 5,
+      "price": 99.99,
+      "details": "Learn both front-end and back-end web development for a comprehensive skill set."
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/J3VKDGz/Rectangle-2-6.png",
+      "courseName": "Machine Learning with Python",
+      "credit": 4,
+      "price": 79.99,
+      "details": "Dive into machine learning and AI using Python libraries like TensorFlow and scikit-learn."
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/nDZ7gpR/Rectangle-3.png",
+      "courseName": "iOS App Development with Swift",
+      "credit": 4,
+      "price": 89.99,
+      "details": "Create apps for Apple devices using Swift and Xcode."
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/svkMyvW/Rectangle-3-1.png",
+      "courseName": "Cybersecurity Fundamentals",
+      "credit": 3,
+      "price": 59.99,
+      "details": "Learn the basics of cybersecurity and protect digital assets from threats."
+    }
+  ]
+  
