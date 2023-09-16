@@ -15,9 +15,9 @@ const BookedItems = ({bookedItem,remaining,totalCredit,totalPrice}) => {
         
        </div>
        <hr />
-       <h3 className="text-xl font-medium py-2">total credit hour:{totalCredit}</h3>
+       <h3 className="text-xl font-medium py-2">Total credit hour: {totalCredit}</h3>
        <hr />
-       <h3 className="text-xl font-medium py-2">total price:{totalPrice}</h3>
+       <h3 className="text-xl font-medium py-2">Total price: {totalPrice} USD</h3>
         </div>
        
        

@@ -11,15 +11,15 @@ const Blogs = ({handleItem,handlePrice}) => {
         .then(data=>setBlogs(data));
     },[])
     return (
-        <div>
+        
             
-          <div className="flex"> <div className=" grid lg:grid-cols-3 px-3 grid-cols-1 gap-5"> {
+          <div className=" grid lg:grid-cols-3 px-3 grid-cols-1 gap-5"> {
              blogs.map(blog=><Blog key={blog.id} blog={blog}
               
                 handleItem={handleItem}  handlePrice={handlePrice}  ></Blog>)
           }</div>
-          <div></div></div>
-        </div>
+          
+        
        
     );
 };

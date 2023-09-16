@@ -15,10 +15,11 @@ const handleItem=(items)=>{
   const isExist=bookedItem.find(item=>item.id==items.id);
   let count =items.credit;
   let price=items.price;
-  const id=items.id
+  
   // console.log(isExist);
   if(isExist){
-    alert('already booked');
+   
+    alert('you have already booked it');
    
   }
   else{
