@@ -1,5 +1,6 @@
 import { FaBookOpen , FaDollarSign } from 'react-icons/fa';
 
+
 const Blog = ({blog,handleItem,handlePrice}) => {
  const {id,image,courseName,credit,price,details}=blog;
     return (
@@ -15,6 +16,7 @@ const Blog = ({blog,handleItem,handlePrice}) => {
                 <span> credit:  {credit}hr</span>
             </div>
             <button onClick={()=>handleItem(blog)}  className="text-white bg-blue-400 w-full rounded-md text-xl py-1">Select</button>
+            
             </div>
             
         

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Blogs from './assets/component/Blogs'
 import BookedItems from './BookedItems';
-
+import { toast } from 'react-toastify';
 
 function App() {
   
@@ -15,9 +15,11 @@ const handleItem=(items)=>{
   const isExist=bookedItem.find(item=>item.id==items.id);
   let count =items.credit;
   let price=items.price;
+  const id=items.id
   // console.log(isExist);
   if(isExist){
-    alert('already booked')
+    alert('already booked');
+   
   }
   else{
     bookedItem.forEach(item=>{
@@ -49,8 +51,10 @@ const handleItem=(items)=>{
   return (
     <>
       
-      <h1 className='text-3xl font-bold text-center my-6'>Course Registration</h1>
-      <div className='container mx-auto flex gap-7'><Blogs handleItem={handleItem} ></Blogs>
+      <div className='md:text-3xl text-xl font-bold text-center my-4'>
+      <h1 >Course Registration</h1>
+      </div>
+      <div className='container mx-auto gap-7 flex flex-col md:flex-row'><Blogs handleItem={handleItem} ></Blogs>
       <BookedItems bookedItem={bookedItem} totalCredit={totalCredit} remaining={remaining} totalPrice={totalPrice}></BookedItems>
       </div>
     </>
