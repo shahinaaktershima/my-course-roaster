@@ -3,7 +3,7 @@ import { useState } from "react";
 import Blog from "./Blog";
 
 
-const Blogs = () => {
+const Blogs = ({handleItem}) => {
     const [blogs,setBlogs]=useState([]);
     useEffect(()=>{
         fetch('src/fakedata.json')
@@ -16,7 +16,7 @@ const Blogs = () => {
           <div className="flex"> <div className="grid md:grid-cols-3 grid-cols-1 gap-5"> {
              blogs.map(blog=><Blog key={blog.id} blog={blog}
               
-             ></Blog>)
+                handleItem={handleItem}    ></Blog>)
           }</div>
           <div></div></div>
         </div>

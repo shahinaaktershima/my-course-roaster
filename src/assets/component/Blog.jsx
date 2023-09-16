@@ -1,10 +1,10 @@
 import { FaBookOpen , FaDollarSign } from 'react-icons/fa';
 
-const Blog = ({blog}) => {
+const Blog = ({blog,handleItem}) => {
  const {id,image,courseName,credit,price,details}=blog;
     return (
        
-           <div className="w-[300px] h-[400px] rounded-xl shadow-md bg-white p-2 space-y-2">
+           <div className="w-[300px] h-[500px] rounded-xl shadow-md bg-white p-2 space-y-2">
              <img className="w-full h-1/2" src={image} alt="" />
             <h2 className="text-xl font-bold">{courseName}</h2>
             <p>{details}</p>
@@ -14,7 +14,7 @@ const Blog = ({blog}) => {
                 <span className='flex items-center'><FaBookOpen></FaBookOpen></span>
                 <span> credit:  {credit}hr</span>
             </div>
-            <button className="text-white bg-blue-400 w-full rounded-md text-xl py-1">Select</button>
+            <button onClick={()=>handleItem(blog)} className="text-white bg-blue-400 w-full rounded-md text-xl py-1">Select</button>
             </div>
             
         
