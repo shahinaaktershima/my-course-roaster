@@ -1,11 +1,11 @@
-
+import PropTypes from 'prop-types';
 
 const BookedItem = ({item}) => {
-    const {courseName}=item;
+    const {courseName,id}=item;
     
     return (
        
-            <div> <li className="font-semibold">{courseName}</li></div>
+            <div> <li className="font-semibold" key={id}>{courseName}</li></div>
                
             
                 
@@ -15,5 +15,7 @@ const BookedItem = ({item}) => {
             
     );
 };
-
+BookedItem.propTypes={
+    item:PropTypes.object.isRequired
+}
 export default BookedItem;

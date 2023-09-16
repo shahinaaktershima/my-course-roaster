@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Blogs from './assets/component/Blogs'
 import BookedItems from './BookedItems';
-import { toast } from 'react-toastify';
+
 
 function App() {
   

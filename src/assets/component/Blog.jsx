@@ -1,4 +1,5 @@
 import { FaBookOpen , FaDollarSign } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 
 const Blog = ({blog,handleItem}) => {
@@ -22,5 +23,9 @@ const Blog = ({blog,handleItem}) => {
         
     );
 };
-
+Blog.propTypes={
+    blog:PropTypes.object.isRequired,
+    handleItem:PropTypes.func,
+    
+}
 export default Blog;

@@ -1,6 +1,6 @@
 import BookedItem from "./BookedItem";
 
-
+import PropTypes from 'prop-types';
 const BookedItems = ({bookedItem,remaining,totalCredit,totalPrice}) => {
     
     return (
@@ -23,5 +23,13 @@ const BookedItems = ({bookedItem,remaining,totalCredit,totalPrice}) => {
        
     );
 };
-
+BookedItems.propTypes={
+    bookedItem:PropTypes.array.isRequired,
+    remaining:PropTypes.number,
+    totalCredit:PropTypes.number,
+    totalPrice:PropTypes.number,
+   
+   
+    
+}
 export default BookedItems;
