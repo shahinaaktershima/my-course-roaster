@@ -8,17 +8,50 @@ import BookedItems from './BookedItems';
 function App() {
   
 const [bookedItem,setBookedItem]=useState([]);
-const [price,setPrice]=useState();
-const handleItem=(item)=>{
-  const selectItem=[...bookedItem,item];
-  setBookedItem(selectItem)
+const [remaining,setRemainig]=useState(0);
+const [totalCredit,setTotalCredit]=useState(0);
+const [totalPrice,setPrice]=useState(0);
+const handleItem=(items)=>{
+  const isExist=bookedItem.find(item=>item.id==items.id);
+  let count =items.credit;
+  let price=items.price;
+  // console.log(isExist);
+  if(isExist){
+    alert('already booked')
+  }
+  else{
+    bookedItem.forEach(item=>{
+      count =count+item.credit;
+      price=price+item.price;
+    });
+    // console.log(count);
+    const remainingTotal=20-count;
+   
+    // console.log(remainingTotal);
+    
+    if(count>20){
+      alert('you dont have enough credit')
+    }
+    else{
+      setTotalCredit(count);
+      setRemainig(remainingTotal);
+      setPrice(price);
+      const selectItem=[...bookedItem,items];
+      setBookedItem(selectItem)
+    }
+
+
+   
+  }
+  
 }
+
   return (
     <>
       
       <h1 className='text-3xl font-bold text-center my-6'>Course Registration</h1>
-      <div className='container mx-auto flex gap-7'><Blogs handleItem={handleItem}></Blogs>
-      <BookedItems bookedItem={bookedItem}></BookedItems>
+      <div className='container mx-auto flex gap-7'><Blogs handleItem={handleItem} ></Blogs>
+      <BookedItems bookedItem={bookedItem} totalCredit={totalCredit} remaining={remaining} totalPrice={totalPrice}></BookedItems>
       </div>
     </>
   )

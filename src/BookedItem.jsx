@@ -5,7 +5,7 @@ const BookedItem = ({item}) => {
     return (
        
             <div>
-             <h3>{courseName}</h3>
+             <h3 className="font-semibold">{courseName}</h3>
             </div>
     );
 };
